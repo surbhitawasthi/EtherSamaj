@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="533.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="framework.NewTaskController">
+
+    <children>
+        <Group layoutX="35.0" layoutY="57.0">
+            <children>
+                <JFXRadioButton fx:id="workService" focusTraversable="false" layoutY="8.0" text="COMMUNITY WORK">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="commService" focusTraversable="false" layoutY="50.0" text="COMMUNITY FUNDING">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="medicalService" focusTraversable="false" layoutY="92.0" text="MEDICAL FUNDING">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXRadioButton>
+            </children>
+        </Group>
+        <Line endX="150.0" layoutX="153.0" layoutY="53.0" startX="-100.0" />
+        <Line endX="150.0" layoutX="153.0" layoutY="186.0" startX="-100.0" />
+        <Label layoutX="26.0" layoutY="254.0" text="DESCRIPTION">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="textArea" layoutX="26.0" layoutY="286.0" prefHeight="170.0" prefWidth="719.0" />
+        <Label layoutX="474.0" layoutY="32.0" text="TIME REQUIRED TO">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="474.0" layoutY="62.0" text="FULFILL FUNDING">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Line endX="150.0" layoutX="575.0" layoutY="97.0" startX="-100.0" />
+        <TextField fx:id="daysField" layoutX="523.0" layoutY="109.0" prefHeight="39.0" prefWidth="123.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </TextField>
+        <Label layoutX="655.0" layoutY="118.0" prefHeight="39.0" prefWidth="71.0" text="Days">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="submitButton" layoutX="269.0" layoutY="473.0" mnemonicParsing="false" onAction="#submitButtonClicked" prefHeight="39.0" prefWidth="83.0" text="SUBMIT" />
+        <Button fx:id="cancelButton" layoutX="420.0" layoutY="473.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="39.0" prefWidth="83.0" text="CANCEL" />
+        <Label fx:id="closeLabel" layoutX="751.0" layoutY="14.0" onMouseClicked="#cancelButtonClicked" prefHeight="16.0" prefWidth="14.0" text="X" textAlignment="CENTER" />
+        <Label layoutX="474.0" layoutY="186.0" text="TARGET">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="targetField" layoutX="574.0" layoutY="170.0" prefHeight="39.0" prefWidth="89.0" />
+        <Label layoutX="664.0" layoutY="181.0" text="Ξ">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="474.0" layoutY="242.0" text="CONTRIBUTION">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="contributeFund" layoutX="654.0" layoutY="224.0" prefHeight="39.0" prefWidth="71.0" promptText="in Wei" />
+    </children></AnchorPane>
