@@ -11,3 +11,6 @@ Desktop App developes on JAVA using Web3j interface on the infura ethereum-test 
 
 #### Sample Images
 
+![Main Page](https://github.com/surbhitawasthi/EtherSamaj/blob/master/Screenshot%20from%202018-02-28%2014-31-44.png)
+
+![Main Page](https://github.com/surbhitawasthi/EtherSamaj/blob/master/Screenshot%20from%202018-01-28%2006-17-24.png)
